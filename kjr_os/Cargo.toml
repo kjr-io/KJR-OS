@@ -7,9 +7,13 @@ edition = "2018"
 
 [dependencies]
 
-[profle.dev]
+# Profile for cargo build
+# Disable Stack Unwinding on Panic
+[profile.dev]
 panic = "abort"
 
+# The Profile Used for cargo build --release
+# Disable Stack Unwinding on Panic
 [profile.release]
 panic = "abort"
 
